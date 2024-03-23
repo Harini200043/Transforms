@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        .box{
+            display: inline-block;
+            border: 3px solid black;
+            background-color: black;
+            padding: 30px;
+            width: 90%;
+
+
+        }
+        .one{
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            width: 25%;
+            margin-left: -10%;
+           
+            
+        }
+        .two{
+            border: 6px solid black;
+            padding: 20px;
+            position: absolute;
+            margin-left: 45%;
+         margin-top: -35%;
+         border-radius: 50%;
+        }
+        .container{
+            border: 3px solid black;
+            padding: 20px;
+            width: 97%;
+            background-color: wheat;
+            
+        }
+        #d1:checked~.two{
+            background-color: lightblue;
+            transform:  none;
+        }
+        #d2:checked~.two{
+            background-color: lightcoral;
+            transform:  rotate(10deg);
+        }
+        #d3:checked~.two{
+            background-color: lightcyan;
+            transform:  rotate(45deg);
+        }
+        #d4:checked~.two{
+            background-color: lightgoldenrodyellow;
+            transform:  rotateX(45deg);
+        }
+        #d5:checked~.two{
+            background-color: lightgray;
+            transform:  rotateX(100deg)
+        }
+        #d6:checked~.two{
+            background-color: lightgreen;
+            transform:  rotateY(45deg);
+        }
+        #d7:checked~.two{
+            background-color: lightpink;
+            transform:  rotateY(80deg);
+        }
+        #d8:checked~.two{
+            background-color: lightsalmon;
+            transform:  skew(20deg,20deg);
+        }
+        #d9:checked~.two{
+            background-color: lightseagreen;
+            transform:  skew(30deg,30deg);
+        }
+        #d10:checked~.two{
+            background-color: lightskyblue;
+            transform:  skewX(30deg);
+        }
+        #d11:checked~.two{
+            background-color: lightslategray;
+            transform:  skewX(40deg);
+        }
+        #d12:checked~.two{
+            background-color: rgb(126, 173, 234);
+            transform:  skewY(30deg);
+        }
+        #d13:checked~.two{
+            background-color: peachpuff;
+            transform:  skewY(40deg);
+        }
+        #d14:checked~.two{
+            background-color: plum;
+            transform:  translate(20px,10px);
+        }
+        #d15:checked~.two{
+            background-color: palevioletred;
+            transform:  translate(20px,20px);
+        }
+        #d16:checked~.two{
+            background-color: peru;
+            transform:  scale(2,2);
+        }
+        #d17:checked~.two{
+            background-color: honeydew;
+            transform:  scale(2,3);
+        }
+        #d18:checked~.two{
+            background-color: aquamarine;
+            transform:  matrix(0.866,0.7,-0.8,0.866,0,0);
+        }
+        #d19:checked~.two{
+            background-color: chocolate;
+            transform:  matrix(0.586,0.8,-0.8,0.586,0,0);
+        }
+        #d20:checked~.two{
+            background-color: fuchsia;
+            transform:  matrix(0.586,0.8,-0.8,0.586,40,30);
+        }
+        .one:hover{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+        
+        <input class="one" type="radio" id="d1" name="s1">
+        <label class="one" for="d1">transform:  none;</label><br>
+        
+        <input class="one"  type="radio" id="d2" name="s1">
+        <label class="one"for="d2">transform:  rotate(10deg);</label><br>
+        
+        <input class="one" type="radio" id="d3" name="s1">
+        <label class="one"for="d3">transform:  rotate(45deg);</label><br>
+        
+        <input class="one" type="radio" id="d4" name="s1">
+        <label class="one"for="d4">transform:  rotateX(45deg);</label><br>
+        
+        <input class="one" type="radio" id="d5" name="s1">
+        <label class="one"for="d5">transform:  rotateX(100deg)</label><br>
+        
+        <input class="one" type="radio" id="d6" name="s1">
+        <label class="one"for="d6">transform:  rotateY(45deg);</label><br>
+        
+        <input class="one" type="radio" id="d7" name="s1">
+        <label class="one"for="d7">transform:  rotateY(80deg);</label><br>
+        
+        <input class="one" type="radio" id="d8" name="s1">
+        <label class="one"for="d8">transform:  skew(20deg,20deg);</label><br>
+        
+        <input class="one" type="radio" id="d9" name="s1">
+        <label class="one"for="d9">transform:  skew(30deg,30deg);</label><br>
+       
+        <input class="one" type="radio" id="d10" name="s1">
+        <label class="one"for="d10">transform:  skewX(30deg);</label><br>
+        
+        <input class="one" type="radio" id="d11" name="s1">
+        <label class="one"for="d11">transform:  skewX(40deg);</label><br>
+        
+        <input class="one" type="radio" id="d12" name="s1">
+        <label class="one"for="d12">transform:  skewY(30deg);</label><br>
+        
+        <input class="one" type="radio" id="d13" name="s1">
+        <label class="one"for="d13">transform:  skewY(40deg);</label><br>
+        
+        <input class="one" type="radio" id="d14" name="s1">
+        <label class="one"for="d14">transform:  translate(20px,10px);</label><br>
+        
+        <input class="one" type="radio" id="d15" name="s1">
+        <label class="one"for="d15">transform:  translate(20px,20px);</label><br>
+        
+        <input class="one" type="radio" id="d16" name="s1">
+        <label class="one"for="d16">transform:  scale(2,2);</label><br>
+        
+        <input class="one" type="radio" id="d17" name="s1">
+        <label class="one"for="d17">transform:  scale(2,3);</label><br>
+        
+        <input class="one" type="radio" id="d18" name="s1">
+        <label class="one"for="d18">transform:  matrix(0.866,0.7,-0.8,0.866,0,0);</label><br>
+       
+        <input class="one" type="radio" id="d19" name="s1">
+        <label class="one"for="d19">transform:  matrix(0.586,0.8,-0.8,0.586,0,0);</label><br>
+        
+        <input class="one" type="radio" id="d20" name="s1">
+        <label class="one"for="d20">transform:  matrix(0.586,0.8,-0.8,0.586,40,30);</label><br>
+        
+        <div class="two">
+           <h2> Hello Everyone.....<img src="./Images/flower.png" height="30px" width="30px"></h2>
+           <img src="./Images/iris.png" height="60px" width="60px" style="margin-left: 14px;">
+           <img src="./Images/hi.png" height="70px" width="70px">
+           <img src="./Images/iris.png" height="60px" width="60px">
+        </div>
+        </div>
+        
+    </div>
+</body>
+</html>
